@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-const articles = require('./Mongoose/mongoFunction');
+// const articles = require('./Mongoose/mongoFunction');
 
 app.use(express.json());
 
-app.listen(5500)
+app.listen(process.env.PORT ||5000;)
 
 app.use("/articles", articles);
 
