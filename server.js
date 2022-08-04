@@ -4,9 +4,9 @@ const app = express();
 
 app.use(express.json());
 
-app.listen(process.env.PORT ||5000;)
+app.listen(process.env.PORT || 3000;)
 
-app.use("/articles", articles);
+// app.use("/articles", articles);
 
 app.get("/", (req, res)=>{
     res.send("Temporary Route")
